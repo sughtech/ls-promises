@@ -42,10 +42,11 @@ function loader() {
 
 function getDataArray() {
     let mockData;
-    let promise = fetch('http://newsapi.org/v2/sources?language=en&apiKey=16424754db74426a99428a7cbac5fac7');
+    let promise = fetch('https://5f72e49e6833480016a9c1c9.mockapi.io/mypromise/ls-api');
 
     return promise.then((response) => {
         if (response.ok) {
+            console.log(response);
             return (response.json());
         }
         console.log('Connection was not successful: ' + response.status.toString())
