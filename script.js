@@ -51,8 +51,9 @@ function getDataArray() {
         }
         console.log('Connection was not successful: ' + response.status.toString())
     }).then((value) => {
-        localStorage.sources = JSON.stringify(value.sources);
-        return value.sources;
+        localStorage.sources = JSON.stringify(value);
+        console.log(value);
+        return value;
     });
 }
 
@@ -86,7 +87,7 @@ function accessData(value) {
         setDiv(finaldata);
     };
 
-    if (localStorage.sources) {
+    if (localStorage.sources !== "undefined" && !localStorage) {
         arrayHandler(JSON.parse(localStorage.sources));
     } else {
         setDiv(loader());
@@ -95,8 +96,8 @@ function accessData(value) {
 }
 
 function start() {
-    if (localStorage.sources) {
-        accessData(10);
+    if (localStorage.sources !== "undefined") {
+        accessData(3);
     } else {
         setDiv('<div class="bg-primary text-white">Nothing to Display<br>Input a value in the text field to begin.</div>')
     }
