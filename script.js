@@ -87,7 +87,7 @@ function accessData(value) {
         setDiv(finaldata);
     };
 
-    if (localStorage.sources !== "undefined" && !localStorage) {
+    if (localStorage.sources !== "undefined" && !!localStorage.sources) {
         arrayHandler(JSON.parse(localStorage.sources));
     } else {
         setDiv(loader());
