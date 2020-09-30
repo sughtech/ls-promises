@@ -1,0 +1,17 @@
+@import url('bootstrap.min.css');
+@import url('progress.css');
+
+.avatar{
+    border-radius: 20px;
+    float: left;
+}
+
+.card{
+    min-width: 300px;
+    max-width:500px;
+}
+
+body{
+    background-image: url('assets/splash.png');
+    background-attachment: fixed;
+}
