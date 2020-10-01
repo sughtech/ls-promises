@@ -12,6 +12,6 @@
 }
 
 body{
-    background-image: url('assets/splash.png');
+    background-image: url('../assets/splash.png');
     background-attachment: fixed;
 }

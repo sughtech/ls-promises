@@ -1,0 +1,24 @@
+{
+"lang": "en",
+"name": "Contact Card Generator",
+"scope": "/",
+"display": "standalone",
+"start_url": ".",
+"short_name": "Contact Gen}",
+"theme_color": "blue",
+"description": "An app which generate a random list of contact cards",
+"orientation": "any",
+"background_color": "lightblue",
+"icons": [
+    {
+        "src": "./assets/logo-192.png",
+        "sizes": "192x192",
+    "type": "image/png"
+    },
+    {
+        "src": "./assets/logo-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+        }
+    ]
+}

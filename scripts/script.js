@@ -1,3 +1,14 @@
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js").then(registration => {
+        console.log("SW Registered!");
+        console.log(registration);
+    }).catch(
+        (err) => {
+            console.log("Failed to register Service Worker:\n" + err);
+        }
+    );
+}
+
 
 function setDiv(value) {
     let divElement = document.getElementById('data');
